@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>Formulário com validação</title>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="descricao">
+            <h1 class="titulo">ficou com dúvida?<br>nos mande uma mensagem!</h1>
+            <p>caso tenha ficado com qualquer dúvida <br>basta nos mandar uma mensagem e <br>entraremos em contato em
+                menos de 24h.</p>
+        </div>
+ 
+        <form action="#" class="form" id="form" >
+            <div class="form-element ">
+                <label for="username"></label>
+                <input class="input-text" type="text" id="username" placeholder="Nome completo *" >
+                <a class="texto-erro">campo obrigatório</a>
+            </div>
+
+            <div class="form-element" >
+                <label for="email"></label>
+                <input class="input-text" type="email" id="email" placeholder="Email *" >
+                <a class="texto-erro">campo obrigatório</a>
+            </div>   
+
+            <div class="form-element">
+                <label for="number"></label>
+                <input class="input-text" type="number" id="telefone" placeholder="Telefone *" >
+                <a class="texto-erro">campo obrigatório</a>
+            </div>
+
+            <div class="form-element">  
+                <label for="mensagem"></label>
+                <textarea class="input-text" name="mensagem"   id="mensagem" cols="30" rows="7" placeholder="Mensagem*" ></textarea>
+                <a class="texto-erro">campo obrigatório</a>
+            </div>  
+
+            <p class="paragrafo">*campos obrigatórios</p>
+
+            <button type="submit" class="btn" id="btn" onclick="clicar()" >Enviar</button>
+           
+        </form>
+       
+    </main>
+
+    <script src="src/JS/script.js"></script>
+    
+</body>
+
+</html>
